@@ -53,7 +53,7 @@ foo@bar:~ $ rerun "python -m unittest discover"
 
 ## Acceptance Criteria
 
-### Step 1: Display Help (x point(s))
+### Step 1: Display Help (1 point(s))
 When the user provides invalid options or supplies the `-h/--help` flag, the
 program should print the following usage message:
 
@@ -87,7 +87,7 @@ def test_help(self):
     self.assertEquals(stdout, usage)
 ```
 
-### Step 2: Test the `-u/--upper option` (x point(s))
+### Step 2: Test the `-u/--upper option` (2 point(s))
 Write a unit test that asserts that `upper` get stored inside of the
 namespace returned from `parser.parse_args` when either `"-u"` or `"--upper"`
 arguments are passed.
@@ -95,7 +95,7 @@ arguments are passed.
 It should also test that `"hello"` gets turned into `"HELLO"` when the
 program is run.
 
-### Step 3: Test the `-l/--lower option` (x point(s))
+### Step 3: Test the `-l/--lower option` (2 point(s))
 Write a unit test that asserts that `lower` get stored inside of the
 namespace returned from `parser.parse_args` when either `"-l"` or `"--lower"`
 arguments are passed.
@@ -103,7 +103,7 @@ arguments are passed.
 It should also test that `"Hello"` gets turned into `"hello"` when the
 program is run.
 
-### Step 4: Test the `-t/--title option` (x point(s))
+### Step 4: Test the `-t/--title option` (2 point(s))
 Write a unit test that asserts that `title` get stored inside of the
 namespace returned from `parser.parse_args` when either `"-t"` or `"--title"`
 arguments are passed.
@@ -111,11 +111,11 @@ arguments are passed.
 It should also test that `"hello"` gets turned into `"Hello"` when the
 program is run.
 
-### Step 5: Test for no arguments (x point(s))
+### Step 5: Test for no arguments (2 point(s))
 Write a unit test that asserts that when no arguments are given, the program
 returns the input text unscathed.
 
-### Step 6: Implement he program (x points)
+### Step 6: Implement he program (2 points)
 Now that your tests are complete, implement the program so that the above
 tests pass.
 
