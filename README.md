@@ -56,18 +56,18 @@ foo@bar:~ $ rerun "python -m unittest discover"
 When the user provides invalid options or supplies the `-h/--help` flag, the
 program should print the following usage message:
 
-  usage: echo.py [-h] [-u] [-l] [-t] text
+    usage: echo.py [-h] [-u] [-l] [-t] text
 
-  Perform transformation on input text.
+    Perform transformation on input text.
 
-  positional arguments:
-    text         text to be manipulated
+    positional arguments:
+        text         text to be manipulated
 
-  optional arguments:
-    -h, --help   show this help message and exit
-    -u, --upper  convert text to uppercase
-    -l, --lower  convert text to lowercase
-    -t, --title  convert text to titlecase
+    optional arguments:
+        -h, --help   show this help message and exit
+        -u, --upper  convert text to uppercase
+        -l, --lower  convert text to lowercase
+        -t, --title  convert text to titlecase
 
 The following unit test can be used to check that your program prints a properly formatted help message:
 
