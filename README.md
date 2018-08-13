@@ -35,14 +35,15 @@ Finally, you should create an empty python file named `echo.py` that you'll
 use to write your program.
 
 When done, you should have a project directory that looks something like this:
-.
-├── README.md
-├── echo.py
-├── screenshots
-│   └── result.gif
-└── tests
-    ├── __init__.py
-    └── test_echo.py
+
+        .
+        ├── README.md
+        ├── echo.py
+        ├── screenshots
+        │   └── result.gif
+        └── tests
+            ├── __init__.py
+            └── test_echo.py
 
 Even before you write a single test, you might find it useful to start your test harness:
 
