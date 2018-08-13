@@ -115,7 +115,7 @@ program is run.
 Write a unit test that asserts that when no arguments are given, the program
 returns the input text unscathed.
 
-### Step 6: Implement he program (2 points)
+### Step 6: Implement he program (3 points)
 Now that your tests are complete, implement the program so that the above
 tests pass.
 
