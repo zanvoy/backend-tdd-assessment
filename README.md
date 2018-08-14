@@ -127,8 +127,6 @@ hello!
 
 Note that the order that the options are provided doesn't matter.
 
-
-
 ### Step 7: Test for no arguments (2 points)
 Write a unit test that asserts that when no arguments are given, the program
 returns the input text unscathed.
@@ -140,3 +138,6 @@ tests pass.
 ## Submission
 
 Submit a link to your GitHub repository to Canvas.
+
+
+#### _Note: Any submission that doesn't conform to PEP8 (as determined by flake8) will receive 0 points!_
