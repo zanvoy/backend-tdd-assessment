@@ -53,7 +53,7 @@ foo@bar:~ $ rerun "python -m unittest discover"
 
 ## Acceptance Criteria
 
-### Step 1: Display Help (1 point(s))
+### Step 1: Display Help (1 point)
 When the user provides invalid options or supplies the `-h/--help` flag, the
 program should print the following usage message:
 
@@ -111,11 +111,29 @@ arguments are passed.
 It should also test that `"hello"` gets turned into `"Hello"` when the
 program is run.
 
-### Step 5: Test for no arguments (2 point(s))
+### Step 6: Test for when all options are provided (2 point(s))
+When a user provides all three options, they should be applied in the order
+listed in usage. Here are a couple examples:
+
+```console
+foo@bar:~ $ python echo.py -tul "heLLo!"
+Hello!
+```
+
+```console
+foo@bar:~ $ python echo.py -ul "heLLo!"
+hello!
+```
+
+Note that the order that the options are provided doesn't matter.
+
+
+
+### Step 7: Test for no arguments (2 points)
 Write a unit test that asserts that when no arguments are given, the program
 returns the input text unscathed.
 
-### Step 6: Implement he program (3 points)
+### Step 8: Implement the program (4 points)
 Now that your tests are complete, implement the program so that the above
 tests pass.
 
