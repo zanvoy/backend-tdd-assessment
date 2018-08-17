@@ -113,7 +113,7 @@ program is run.
 
 ### Step 6: Test for when all options are provided (2 point(s))
 When a user provides all three options, they should be applied in the order
-listed in usage. Here are a couple examples:
+listed in the helpful usage message that Argparse constructs from the argument definitions. Here are a few examples:
 
 ```console
 foo@bar:~ $ python echo.py -tul "heLLo!"
@@ -125,7 +125,7 @@ foo@bar:~ $ python echo.py -ul "heLLo!"
 hello!
 ```
 
-Note that the order that the options are provided doesn't matter.
+Note that the order that the options are provided doesn't matterj, e.g. '-tul' and '-utl' and '-lut' are all equivalent inputs to Argparse.  Only the final text transform result should be printed.
 
 ### Step 7: Test for no arguments (2 points)
 Write a unit test that asserts that when no arguments are given, the program
