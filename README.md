@@ -123,6 +123,12 @@ returns the input text unscathed.
 Now that your tests are complete, implement the program so that the above
 tests pass.
 
+## Structuring your code
+Remember to separate functionality in your echo.py application.  Notice that many of the tests above are checking to see if the argument parser has done its job correctly by parsing out an option from the command line, and making it available in parser output (the Namespace, or parsed args dict).  
+Therefore, it makes sense to have a function in echo.py whose sole purpose is to deliver back a parser object, that can be stored in your TestEcho class and invoked by calling its parse_args() method with various argument lists.  Such a function might be named `create_parser()`.
+You may also benefit from having a separate `main()` function in your echo.py appliction.  A main() function be invoked from the command line directly, as well as be imported by your test program and tested independently.
+
+
 ## Workflow for this Assignment
 1. Fork this repository into your own personal github account.
 2. Then Clone your own repo to your local development machine.
