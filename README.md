@@ -113,11 +113,11 @@ $ python echo.py -ul "heLLo!"
 hello!
 ```
 
-Note that the order that the options are provided doesn't matterj, e.g. '-tul' and '-utl' and '-lut' are all equivalent inputs to Argparse.  Only the final text transform result should be printed.
+Note that the order that the options are provided doesn't matter, e.g. '-tul' and '-utl' and '-lut' are all equivalent inputs to Argparse.  Only the final text transform result should be printed.
 
 ### Step 7: Test for no arguments
 Write a unit test that asserts that when no arguments are given, the program
-returns the input text unscathed.
+returns the unaltered input text.
 
 ### Step 8: Implement the program
 Now that your tests are complete, implement the program so that the above
@@ -126,7 +126,7 @@ tests pass.
 ## Structuring your code
 Remember to separate functionality in your echo.py application.  Notice that many of the tests above are checking to see if the argument parser has done its job correctly by parsing out an option from the command line, and making it available in parser output (the Namespace, or parsed args dict).  
 Therefore, it makes sense to have a function in echo.py whose sole purpose is to deliver back a parser object, that can be stored in your TestEcho class and invoked by calling its parse_args() method with various argument lists.  Such a function might be named `create_parser()`.
-You may also benefit from having a separate `main()` function in your echo.py appliction.  A main() function be invoked from the command line directly, as well as be imported by your test program and tested independently.
+You may also benefit from having a separate `main()` function in your echo.py appliction.  A main() function can be invoked from the command line directly, as well as be imported by your test program and tested independently.
 
 
 ## Workflow for this Assignment
